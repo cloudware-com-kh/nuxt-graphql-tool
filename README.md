@@ -7,7 +7,11 @@ Find and replace all on all files (CMD+SHIFT+F):
 - Description: My new Nuxt module
 -->
 
-# My Module
+# Nuxt GraphQL Tool
+
+## Codegen
+
+References: https://github.com/lewebsimple/nuxt-graphql-codegen
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
