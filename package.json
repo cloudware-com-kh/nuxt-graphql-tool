@@ -1,8 +1,8 @@
 {
   "name": "nuxt-graphql-tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nuxt module for GraphQL tools",
-  "repository": "your-org/my-module",
+  "repository": "https://github.com/cloudware-com-kh/nuxt-graphql-tools.git",
   "license": "MIT",
   "type": "module",
   "exports": {
