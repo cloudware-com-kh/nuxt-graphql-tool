@@ -1,7 +1,7 @@
 {
   "name": "nuxt-graphql-tool",
   "version": "1.0.6",
-  "description": "Nuxt module for GraphQL tools",
+  "description": "Nuxt module for GraphQL tool",
   "repository": "https://github.com/cloudware-com-kh/nuxt-graphql-tool.git",
   "license": "MIT",
   "type": "module",
@@ -14,9 +14,7 @@
   },
   "main": "./dist/module.cjs",
   "types": "./dist/types.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "prepack": "nuxt-module-build build",
     "dev": "nuxi dev playground",
