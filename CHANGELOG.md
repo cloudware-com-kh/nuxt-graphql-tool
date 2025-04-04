@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.8
+
+[compare changes](https://github.com/cloudware-com-kh/nuxt-graphql-tool/compare/v1.0.6...v1.0.8)
+
+### 🏡 Chore
+
+- **release:** V1.0.7 ([535992b](https://github.com/cloudware-com-kh/nuxt-graphql-tool/commit/535992b))
+
+### ❤️ Contributors
+
+- Tun Cham Roeun <chamroeuntun25@outlook.com>
+
 ## v1.0.7
 
 [compare changes](https://github.com/cloudware-com-kh/nuxt-graphql-tool/compare/v1.0.6...v1.0.7)
