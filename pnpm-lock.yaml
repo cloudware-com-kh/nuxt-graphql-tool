@@ -7,13 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      cross-spawn:
-        specifier: '>=7.0.5'
-        version: 7.0.6
-      rollup:
-        specifier: '>=3.29.5'
-        version: 4.38.0
     devDependencies:
       '@graphql-codegen/cli':
         specifier: ^5.0.2
@@ -42,12 +35,18 @@ importers:
       changelogen:
         specifier: ^0.5.5
         version: 0.5.5(magicast@0.3.5)
+      cross-spawn:
+        specifier: '>=7.0.5'
+        version: 7.0.6
       eslint:
         specifier: ^9.9.1
         version: 9.9.1(jiti@2.4.2)
       nuxt:
         specifier: ^3.16.2
         version: 3.16.2(@parcel/watcher@2.5.1)(@types/node@22.5.2)(db0@0.3.1)(eslint@9.9.1(jiti@2.4.2))(ioredis@5.6.0)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.38.0)(terser@5.39.0)(typescript@5.8.2)(vite@6.2.4(@types/node@22.5.2)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))(vue-tsc@2.2.8(typescript@5.8.2))(yaml@2.7.1)
+      rollup:
+        specifier: '>=3.29.5'
+        version: 4.38.0
       typescript:
         specifier: latest
         version: 5.8.2
