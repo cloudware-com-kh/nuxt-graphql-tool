@@ -27,22 +27,22 @@ export default defineNuxtModule<ModuleOptions>({
     if (opt.devOnly && !nuxt.options.dev) {
       return
     }
-    // Load GraphQL Code Generator configuration from rootDir
-    const { config, filepath } = await loadCodegenConfig({
-      configFilePath: nuxt.options.rootDir,
-    })
-    const cwd = dirname(filepath)
 
     // Execute GraphQL Code Generator
     async function codegen() {
       try {
+        // Load GraphQL Code Generator configuration from rootDir
+        const { config, filepath } = await loadCodegenConfig({
+          configFilePath: nuxt.options.rootDir,
+        })
+        const cwd = dirname(filepath)
         const start = Date.now()
         await generate({ ...config, cwd, silent: true }, true)
         const time = Date.now() - start
         logger.success(`GraphQL Code Generator generated code in ${time}ms`)
       }
-      catch {
-        logger.error(`GraphQL Code Generator configuration not found.`)
+      catch (error) {
+        logger.error(`${error instanceof Error ? error.message : String(error)}`)
       }
     }
 
