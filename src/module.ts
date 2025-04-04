@@ -5,6 +5,7 @@ import { name, version } from '../package.json'
 
 // Module options TypeScript interface definition
 export type ModuleOptions = object
+
 export type Config = {
   devOnly: boolean
   extensions: string[]
@@ -20,7 +21,7 @@ export default defineNuxtModule<ModuleOptions>({
     devOnly: false,
     extensions: ['.graphql', '.gql'],
   },
-  async setup(options, nuxt) {
+  setup(options, nuxt) {
     const opt: Config = options as Config
     const resolver = createResolver(import.meta.url)
     // Run in development mode only
@@ -39,10 +40,11 @@ export default defineNuxtModule<ModuleOptions>({
         const start = Date.now()
         await generate({ ...config, cwd, silent: true }, true)
         const time = Date.now() - start
-        logger.success(`GraphQL Code Generator generated code in ${time}ms`)
+        logger.success(`${name} generated code in ${time}ms`)
       }
       catch (error) {
-        logger.error(`${error instanceof Error ? error.message : String(error)}`)
+        logger.warn(`${name} - Please check your config file: codegen.ts or codegen.yaml`)
+        logger.error(`${name} - ${error instanceof Error ? error.message : String(error)}`)
       }
     }
 
