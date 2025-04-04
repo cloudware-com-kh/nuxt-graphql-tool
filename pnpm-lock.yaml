@@ -11,6 +11,9 @@ importers:
       cross-spawn:
         specifier: '>=7.0.5'
         version: 7.0.6
+      rollup:
+        specifier: '>=3.29.5'
+        version: 4.38.0
     devDependencies:
       '@graphql-codegen/cli':
         specifier: ^5.0.2

@@ -30,7 +30,8 @@
   },
   "peerDependencies": {
     "@graphql-codegen/cli": "^5",
-    "cross-spawn": ">=7.0.5"
+    "cross-spawn": ">=7.0.5",
+    "rollup": ">=3.29.5"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^5.0.2",
