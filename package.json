@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-gql-codegen",
+  "name": "nuxt-graphql-tool",
   "version": "1.0.1",
   "description": "Nuxt GraphQL Codegen",
-  "repository": "https://github.com/cloudware-com-kh/nuxt-graphql-codegen.git",
+  "repository": "https://github.com/cloudware-com-kh/nuxt-graphql-tool.git",
   "license": "MIT",
   "type": "module",
   "exports": {
